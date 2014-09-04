@@ -6,26 +6,28 @@
 
 ```
 
-| current  
+| current -> /var/www/html/releases/20140603135929
 | releases  
-|	|-- 201401010100  
-|	|-- 201312310800
+|   |-- 20140109184951
+|   |-- 20140109192408
+|   |-- 20140220192211
+|   |-- 20140220192944
+|   |-- 20140603135929
 ```	
 
 
 ```
 set :branch, "master"
 
-set :application, "camel-mobile"
+set :application, "capistrano"
 set :scm, :git
 set :scm_verbose, true
 set :use_sudo, true
-set :repository,  "git@github.com:RockfishInteractive/RJReynolds_Camel_mweb.git"
 set :keep_releases, 5
 set :user, "deploy"
 set :owner, "apache"
 set :group, "apache"
-set :repository,  "git@rfd0git01:/var/git/camel_mobile.git"
+set :repository,  "xxxxxxxxxxxxx"
 set :use_sudo, true
 set :keep_releases, 5
 
@@ -33,7 +35,7 @@ default_run_options[:pty] = true
 
 ssh_options[:forward_agent] = true
 ssh_options[:port] = 22
-ssh_options[:keys] = '../../../id_rsa_deploy'
+ssh_options[:keys] = '../../../id_rsa'
 
 role :app, "xxx.xxx.xxx.xxx", "xxx.xxx.xxx.xxx"
 
@@ -49,7 +51,9 @@ namespace :deploy do
   end
 end
 ```
+
 To Execute:
+
 ```
 cap production deploy
 ```
