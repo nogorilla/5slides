@@ -1,5 +1,5 @@
 # Mardown is great
-Let me * the ways[http://ryanparsley.github.io/markdown5slides](http://ryanparsley.github.io/markdown5slides)
+Let me * the ways[http://nogorilla.github.io/5slides](http://nogorilla.github.io/5slides)
 
 ## Featuring
 
